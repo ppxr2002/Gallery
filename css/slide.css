@@ -1,0 +1,123 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+img.home{
+    position: absolute;
+    top: 0px;
+    left: 1rem;
+    opacity: 0.3;
+}
+img.home:hover,img.next:hover,a.telecharger.active:hover,img.prev:hover,button.afficher img:hover{
+    opacity: 1;
+}
+.slide{
+    background-color: #000;
+    height: 100vh;
+    position: relative;
+}
+.slide img{
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity .5s;
+}
+.slide img.active{
+    opacity: 1;
+}
+img.next{
+    border-radius: 100px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    right: 0.5rem;
+    cursor: pointer;
+    opacity: 0.3;
+}
+img.prev{
+    border-radius: 100px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 0.5rem;
+    cursor: pointer;
+    opacity: 0.3;
+}
+div.bulle{
+    background-color: #fff;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    margin: 10px;
+    opacity: 0.3;
+    transition: opacity 0.5s;
+}
+.bulle.active{
+    opacity: 1;
+} 
+nav#bulle{
+    display: flex;
+    position: absolute;
+    top: 95%;
+    left: 45%;
+}
+nav#infos{
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    top: 5em;
+    right: 1rem;
+    opacity: 0;
+    background-color: #fff;
+    margin: 10px;
+}
+div.infos{
+ margin: 10px;
+ position: absolute; 
+ opacity: 0; 
+}
+div.infos.active{
+    opacity: 1;
+}
+button.quit{
+    width: 25px;
+    height: 25px;
+    left: 1rem;
+    bottom: 1rem;
+    background-color: red;
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin: 10px;
+}
+button.afficher img{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0.7rem;
+    right: 1rem;
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: 0.3;
+}
+div#telecharger{
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 80px;
+}
+div#telecharger img{
+    background-color: #fff;
+    margin: 10px;
+    border-radius: 50%;
+}
+a.telecharger{
+    opacity: 0;
+}
+a.telecharger.active{
+    opacity: 0.5;
+}

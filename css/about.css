@@ -1,0 +1,114 @@
+@font-face{
+    font-family: 'Tangerine';
+    src: url(../font/Tangerine_Bold.ttf),
+         url(../font/Tangerine_Regular.ttf);
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}/*En tete*/
+header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+img.logo{
+    border: 2px solid #000;
+    border-radius: 5px;
+}
+a{
+    text-decoration: none;
+}
+a.about{
+    height: 50px;
+    overflow: hidden;
+    text-decoration: none;
+}
+a.about:hover{
+    overflow: visible;
+}
+a.about p{
+    color: #fff;
+    background-color: #737373;
+    border-radius: 5px;
+    font-size: 15px;
+    border-left: 5px solid #737373;
+}
+h1{
+    color: #5a3d1f;
+    font-family:'Times New Roman', Times, serif;
+    border-bottom: 5px solid #5a3d1f;
+}
+/*Contenu*/
+nav.content{
+    text-align: center;
+    font-size: 20px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+div.scroll{
+    height: 400px;
+    overflow-y: scroll;
+    background-color: bisque;
+    margin: 20px;
+}
+div.scroll p{
+    animation: monte 15s linear;
+}
+@keyframes monte{
+    from{
+        translate: 0px 0%;
+    }
+    to{
+        translate: 0px -100%;
+    }
+}
+.star{
+    float: right;
+    color: #737373;
+    text-decoration: none;
+    transition: color .4s;
+    font-size: 25px;
+}
+.star:focus ~ a,.star:hover ~ a,.star:focus,.star:hover{
+    color: yellow;
+}
+.note{
+    margin-right: 50%;
+}
+p.eto{
+    margin-right: 50%;
+}
+
+/*Pied*/
+nav.style{
+    margin-left: 85%;
+}
+button{
+    cursor: pointer;
+    width: 25px;
+}
+footer{
+    margin-top: 15px;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+}
+@media(max-width: 700px){
+    h1{
+        margin-top: 35px;
+        font-size: 20px;
+        border-bottom: 2px solid #5a3d1f;
+    }
+    nav.content{
+        text-align: center;
+        font-size: 20px;
+        width: 300px;
+    }
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../img/gallery.png"/>
+    <link rel="stylesheet" href="../css/about.css">
+    <title>A propos</title>
+</head>
+<body id="body">
+    <header>
+        <a href="../index.html#footer" class="logo">
+            <img src="../img/accueil.png" alt="logo" width="140px" height="80px" class="logo"/>
+        </a>
+        <h1>GALLERY</h1>
+        <a href="#" class="about">
+            <img src="../img/about-us-22.svg" alt="about" width="50px" height="50px" class="about"/>
+            <p>A propos</p>
+        </a>
+    </header>
+    <nav class="content">
+        <div class="scroll">
+            <p>
+                Tous les informations sur ce site sont viens de<br>(<a href="https://www.wikipedia.com" target="_blank">https://www.wikipedia.com</a>) .<br><br>
+                Madagascar possede plusiuer espece endemique,mais ce que <br>nous avons ici ce n'est que des extraits de ces derniers. <br><br>
+                Le royaume de Madagascar est le nom officiel porte par le Royaume merina,<br>pour cela que tous le rois et reines viennent de Royaume merina. <br><br>
+                Madagascar est une ile paradisiaque, le pays a plusieur site touristique<br>alors n'hesite pas de venir pour le visiter. <br><br>
+                Si vous voulez nous aider n'hesite pas a nous contacter,<br>nous sommes ravi de colaborer avec vous. <br><br>
+                <br><br><br>
+                Merci de votre visite! :)
+            </p>
+        </div>
+        <form>
+            <fieldset>
+                <legend>Commentaire ou Remarque</legend>
+                        <div class="commentaire">
+                            <textarea style="width: 200px;" placeholder="commentaire"></textarea>
+                            <button type="submit" style="width: 70px;">Envoyer</button>
+                        </div>
+                        <div class="note">
+                            <a class="star" href="#1" onclick="calcul('5');">&#11241;</a>
+                            <a class="star" href="#2" onclick="calcul('4');">&#9733</a>
+                            <a class="star" href="#3" onclick="calcul('3');">&#9733</a>
+                            <a class="star" href="#4" onclick="calcul('2');">&#9733</a>
+                            <a class="star" href="#5" onclick="calcul('1');">&#9733</a>
+                            <p id="eto">Note: 0</p>
+                        </div>
+            </fieldset>
+        </form>
+    </nav>
+    <nav class="style">
+        <p><b>Couleur du Fond :</b></p>
+        <div class="bouton">
+            <button onclick="bg('white');" style="color: white; background-color: white;"><br></button>
+            <button onclick="bg('grey');" style="color: grey; background-color: grey;"><br></button>
+            <button onclick="bg('aquamarine');" style="color: blue; background-color: aquamarine;"><br></button>
+            <button onclick="bg('palevioletred');" style="color: red; background-color: palevioletred;"><br></button>
+            <button onclick="bg('lightgreen');" style="color: vert; background-color: lightgreen;"><br></button>
+        </div>
+    </nav>
+    <footer>
+        <br>
+        GALLERY &copy 2022
+    </footer>
+    <script src="../js/index.js"></script>
+</body>
+</html>
